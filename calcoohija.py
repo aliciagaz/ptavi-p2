@@ -27,11 +27,12 @@ if __name__ == "__main__":
         result = (calchija.plus(operando1, operando2))
     elif sys.argv[2] == "resta":
         result = (calchija.minus(operando1, operando2))
-    elif sys.argv[2] == "multiplicar":
+    elif sys.argv[2] == "multiplica":
         result = (calchija.mult(operando1, operando2))
-    elif sys.argv[2] == "dividir":
+    elif sys.argv[2] == "divide":
         result = (calchija.div(operando1, operando2))
     else:
-        sys.exit('Operación sólo puede ser sumar o restar.')
+        sys.exit("Error: La operación sólo puede ser suma"
+                 + "resta, multiplica o divide")
 
-    print(result)
+    print("El resultado es " + str(result))
