@@ -29,4 +29,4 @@ if __name__ == "__main__":
     else:
         sys.exit('Operación sólo puede ser suma o resta.')
 
-    print(result)
+    print("El resultado es " + str(result))
