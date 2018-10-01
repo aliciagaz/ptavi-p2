@@ -12,6 +12,7 @@ if __name__ == "__main__":
 
         fichero = open(str(sys.argv[1]), "r")
         texto = fichero.readlines()
+        fichero.close()
 
         for linea in texto:
             linea = linea[:-1].split(",")
